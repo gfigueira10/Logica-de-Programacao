@@ -6,6 +6,22 @@ void setup() {
 }
 
 void loop() {
+  
+  
+  
+   //Cabeçalho
+  Serial.println("|------------------------------|");//primeira linha
+  Serial.println("|                              |");//segunda linha
+  Serial.println("|        LOPAL - EX_06         |");//terceira linha
+  Serial.println("|                              |");//quarta linha
+  Serial.println("|------------------------------|");//ultima linha
+  
+  
+  Serial.println();//pula uma linha
+  Serial.println();//pula uma linha
+  
+  
+  
   // Verifica se há dados disponíveis na serial
   if (Serial.available() > 0) {
     float polegadas = Serial.parseFloat();         // Lê o número digitado

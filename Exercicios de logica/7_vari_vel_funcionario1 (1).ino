@@ -14,6 +14,22 @@ void setup() {
 }
 
 void loop() {
+  
+  
+   //Cabeçalho
+  Serial.println("|------------------------------|");//primeira linha
+  Serial.println("|                              |");//segunda linha
+  Serial.println("|        LOPAL - EX_07         |");//terceira linha
+  Serial.println("|                              |");//quarta linha
+  Serial.println("|------------------------------|");//ultima linha
+  
+  
+  Serial.println();//pula uma linha
+  Serial.println();//pula uma linha
+  
+  
+ 
+  
   if (Serial.available() > 0) {
     if (aguardandoNome) {
       nome = Serial.readStringUntil('\n');
